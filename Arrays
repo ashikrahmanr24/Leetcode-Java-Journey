@@ -1,0 +1,16 @@
+class Solution {
+    public int differenceOfSum(int[] nums) {
+        int sum1 = 0;
+        int sum2 = 0;
+        for(int i = 0; i < nums.length; i++) {
+            sum1 += nums[i];
+            int a=nums[i];
+            while (a>0) {
+                int r = a % 10;
+                sum2 += r;
+                a /= 10;
+            }
+        }  
+        return Math.abs(sum1-sum2);
+    }
+}
