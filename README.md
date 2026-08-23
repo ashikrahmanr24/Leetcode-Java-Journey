@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0007-reverse-integer](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0009-palindrome-number) |
+| [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
 ## Array
 |  |
 | ------- |
@@ -24,6 +25,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0035-search-insert-position) |
+| [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
 ## Simulation
 |  |
 | ------- |
@@ -33,4 +35,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1480-running-sum-of-1d-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1480-running-sum-of-1d-array) |
+## Newton's Method
+|  |
+| ------- |
+| [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
 <!---LeetCode Topics End-->
