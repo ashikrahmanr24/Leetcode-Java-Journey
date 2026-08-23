@@ -1,32 +1,32 @@
 class Solution {
     public boolean sumGame(String num) {
         int n = num.length();
-        int sumL = 0, sumR = 0;
-        int qL = 0, qR = 0;
-
-        for (int i = 0; i < n; i++) {
-            char c = num.charAt(i);
-            if (i < n / 2) {
-                if (c == '?') {
-                    qL++;
-                } else {
-                    sumL += c - '0';
-                }
+        char[] arr = num.toCharArray();
+        
+        int sumDiff = 0;
+        int qDiff = 0;
+        int mid = n / 2;
+        
+        // Process the left half
+        for (int i = 0; i < mid; i++) {
+            if (arr[i] == '?') {
+                qDiff++;
             } else {
-                if (c == '?') {
-                    qR++;
-                } else {
-                    sumR += c - '0';
-                }
+                sumDiff += arr[i] - '0';
             }
         }
-
-        // Alice wins if total '?' count is odd (she gets the last move)
-        if ((qL + qR) % 2 != 0) {
-            return true;
+        
+        // Process the right half
+        for (int i = mid; i < n; i++) {
+            if (arr[i] == '?') {
+                qDiff--;
+            } else {
+                sumDiff -= arr[i] - '0';
+            }
         }
-
-        // Each extra pair of '?' on one side can contribute a net total of 9 points
-        return (sumL - sumR) * 2 != (qR - qL) * 9;
+        
+        // 1. If the total number of '?' is odd, Alice always wins.
+        // 2. Bob can only balance the sums if the difference matches exactly 4.5 per pair of '?'.
+        return qDiff % 2 != 0 || sumDiff != -qDiff * 9 / 2;
     }
 }
