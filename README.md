@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0326-power-of-three) |
+| [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
 | [2235-add-two-integers](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2235-add-two-integers) |
 | [2469-convert-the-temperature](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2469-convert-the-temperature) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2520-count-the-digits-that-divide-a-number) |
@@ -53,4 +54,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0326-power-of-three) |
+## String
+|  |
+| ------- |
+| [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
+## Greedy
+|  |
+| ------- |
+| [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
+## Game Theory
+|  |
+| ------- |
+| [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
 <!---LeetCode Topics End-->
