@@ -9,9 +9,6 @@ class Solution {
             rev=(rev*10)+(x%10);
             x/=10;
         }
-        if(org==rev) {
-            return true;
-        }
-        return false;
+        return org==rev;
     }
 }
