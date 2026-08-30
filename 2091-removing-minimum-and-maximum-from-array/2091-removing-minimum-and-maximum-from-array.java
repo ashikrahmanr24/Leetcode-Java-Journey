@@ -6,30 +6,30 @@ class Solution {
         int minIdx = 0;
         int maxIdx = 0;
 
-        // Find the positions of min and max elements
+        // Find positions of the minimum and maximum elements in a single pass
         for (int k = 1; k < n; k++) {
             if (nums[k] < nums[minIdx]) {
                 minIdx = k;
-            }
-            if (nums[k] > nums[maxIdx]) {
+            } else if (nums[k] > nums[maxIdx]) { // 'else if' saves redundant checks
                 maxIdx = k;
             }
         }
 
-        // Ensure i is the smaller index and j is the larger index
-        int i = Math.min(minIdx, maxIdx);
-        int j = Math.max(minIdx, maxIdx);
+        // Determine which index is closer to the start (left) and end (right)
+        int left = (minIdx < maxIdx) ? minIdx : maxIdx;
+        int right = (minIdx > maxIdx) ? minIdx : maxIdx;
 
-        // Scenario 1: Remove both from the front
-        int op1 = j + 1;
+        // Strategy 1: Delete both from the left side
+        int opt1 = right + 1;
+        
+        // Strategy 2: Delete both from the right side
+        int opt2 = n - left;
+        
+        // Strategy 3: Delete left from the left side and right from the right side
+        int opt3 = (left + 1) + (n - right);
 
-        // Scenario 2: Remove both from the back
-        int op2 = n - i;
-
-        // Scenario 3: Remove smaller from front, larger from back
-        int op3 = (i + 1) + (n - j);
-
-        // Return the minimum of all three possibilities
-        return Math.min(op1, Math.min(op2, op3));
+        // Find the absolute minimum of the three options using ternary operations
+        int minDel = (opt1 < opt2) ? opt1 : opt2;
+        return (minDel < opt3) ? minDel : opt3;
     }
 }
