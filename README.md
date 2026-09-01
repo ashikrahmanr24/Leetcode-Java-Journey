@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0326-power-of-three) |
+| [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
 | [2235-add-two-integers](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2235-add-two-integers) |
 | [2469-convert-the-temperature](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2469-convert-the-temperature) |
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
+| [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Recursion
 |  |
