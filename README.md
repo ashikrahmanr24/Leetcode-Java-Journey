@@ -23,10 +23,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1920-build-array-from-permutation](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1929-concatenation-of-array) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0001-two-sum) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 ## Binary Search
 |  |
@@ -51,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Recursion
 |  |
 | ------- |
@@ -94,4 +97,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
+## Breadth-First Search
+|  |
+| ------- |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+## Matrix
+|  |
+| ------- |
+| [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 <!---LeetCode Topics End-->
