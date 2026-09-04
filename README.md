@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3876-construct-uniform-parity-array-ii) |
+| [3903-smallest-stable-index-i](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3903-smallest-stable-index-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -48,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1480-running-sum-of-1d-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1480-running-sum-of-1d-array) |
+| [3903-smallest-stable-index-i](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3903-smallest-stable-index-i) |
 ## Newton's Method
 |  |
 | ------- |
