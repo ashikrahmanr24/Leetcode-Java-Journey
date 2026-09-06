@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0115-distinct-subsequences](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0115-distinct-subsequences) |
 | [1108-defanging-an-ip-address](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1108-defanging-an-ip-address) |
 | [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
@@ -114,4 +115,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0115-distinct-subsequences](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0115-distinct-subsequences) |
 <!---LeetCode Topics End-->
