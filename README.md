@@ -71,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0115-distinct-subsequences](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0115-distinct-subsequences) |
+| [0940-distinct-subsequences-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0940-distinct-subsequences-ii) |
 | [1108-defanging-an-ip-address](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1108-defanging-an-ip-address) |
 | [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
@@ -119,4 +120,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0115-distinct-subsequences](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0115-distinct-subsequences) |
+| [0940-distinct-subsequences-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0940-distinct-subsequences-ii) |
 <!---LeetCode Topics End-->
