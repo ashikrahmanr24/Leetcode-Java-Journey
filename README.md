@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0035-search-insert-position) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0136-single-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0136-single-number) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1480-running-sum-of-1d-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1480-running-sum-of-1d-array) |
 | [1920-build-array-from-permutation](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1920-build-array-from-permutation) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0136-single-number) |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
