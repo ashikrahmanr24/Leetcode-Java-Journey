@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2235-add-two-integers](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2235-add-two-integers) |
 | [2469-convert-the-temperature](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2469-convert-the-temperature) |
 | [2520-count-the-digits-that-divide-a-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2520-count-the-digits-that-divide-a-number) |
+| [3871-count-commas-in-range-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3871-count-commas-in-range-ii) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Array
 |  |
