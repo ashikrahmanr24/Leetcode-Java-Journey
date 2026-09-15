@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0035-search-insert-position) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0136-single-number) |
+| [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1480-running-sum-of-1d-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1480-running-sum-of-1d-array) |
 | [1920-build-array-from-permutation](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1920-build-array-from-permutation) |
@@ -36,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0001-two-sum) |
+| [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
@@ -45,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
+| [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 ## Simulation
 |  |
 | ------- |
@@ -108,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
 ## Linked List
 |  |
@@ -130,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Counting Sort
 |  |
