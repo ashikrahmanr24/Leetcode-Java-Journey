@@ -1,0 +1,17 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n = nums.length;
+        for(int i=0;i<n;i++) {
+            int c=0; //reset point
+            for(int j=0;j<n;j++) {
+                if(i!=j && nums[i] == nums[j]) {
+                    c++;
+                }
+            }
+            if(c==0) { //validation point
+                return nums[i];
+            }
+        }
+        return -1;
+    }
+}
