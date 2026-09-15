@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0014-longest-common-prefix) |
+| [0027-remove-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0035-search-insert-position) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -128,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0027-remove-element) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
