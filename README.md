@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0069-sqrtx) |
 | [0231-power-of-two](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0326-power-of-three) |
+| [0836-rectangle-overlap](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0836-rectangle-overlap) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1512-number-of-good-pairs](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1512-number-of-good-pairs) |
 | [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
@@ -148,4 +149,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+## Geometry
+|  |
+| ------- |
+| [0836-rectangle-overlap](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0836-rectangle-overlap) |
 <!---LeetCode Topics End-->
