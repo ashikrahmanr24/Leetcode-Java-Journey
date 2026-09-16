@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0137-single-number-ii) |
+| [0217-contains-duplicate](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0268-missing-number) |
 | [0835-image-overlap](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0835-image-overlap) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0001-two-sum) |
+| [0217-contains-duplicate](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0268-missing-number) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -168,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0217-contains-duplicate](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0268-missing-number) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
