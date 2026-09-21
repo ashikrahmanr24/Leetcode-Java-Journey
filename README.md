@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0137-single-number-ii) |
+| [0169-majority-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0189-rotate-array) |
 | [0217-contains-duplicate](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0268-missing-number) |
@@ -58,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0001-two-sum) |
+| [0169-majority-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0268-missing-number) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0169-majority-element) |
 | [1512-number-of-good-pairs](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1512-number-of-good-pairs) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 ## Enumeration
@@ -182,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0268-missing-number) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1346-check-if-n-and-its-double-exist) |
@@ -217,4 +221,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0169-majority-element) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
