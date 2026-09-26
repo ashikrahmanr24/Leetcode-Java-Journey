@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1480-running-sum-of-1d-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1480-running-sum-of-1d-array) |
 | [1512-number-of-good-pairs](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1512-number-of-good-pairs) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1920-build-array-from-permutation](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1920-build-array-from-permutation) |
 | [1929-concatenation-of-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1929-concatenation-of-array) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1512-number-of-good-pairs](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1512-number-of-good-pairs) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [3483-unique-3-digit-even-numbers](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3483-unique-3-digit-even-numbers) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
@@ -127,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1096-brace-expansion-ii](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1096-brace-expansion-ii) |
 | [1108-defanging-an-ip-address](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1108-defanging-an-ip-address) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
+| [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1807-evaluate-the-bracket-pairs-of-a-string) |
 | [1927-sum-game](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/1927-sum-game) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/ashikrahmanr24/Leetcode-Java-Journey/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
