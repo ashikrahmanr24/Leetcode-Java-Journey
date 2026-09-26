@@ -1,57 +1,40 @@
-import java.util.List;
-
 class Solution {
-    static class TrieNode {
-        TrieNode[] children = new TrieNode[26];
-        String value = null;
-    }
-
     public String evaluate(String s, List<List<String>> knowledge) {
-        TrieNode root = new TrieNode();
-        
+        // Create a HashMap to store key-value pairs from knowledge base
+        // Each entry maps a key (first element) to its value (second element)
+        Map<String, String> knowledgeMap = new HashMap<>(knowledge.size());
+      
+        // Populate the map with knowledge pairs
         for (List<String> pair : knowledge) {
-            String key = pair.get(0);
-            String val = pair.get(1);
-            TrieNode curr = root;
-            
-            int len = key.length();
-            for (int i = 0; i < len; i++) {
-                int idx = key.charAt(i) - 'a';
-                if (curr.children[idx] == null) {
-                    curr.children[idx] = new TrieNode();
-                }
-                curr = curr.children[idx];
-            }
-            curr.value = val; 
+            knowledgeMap.put(pair.get(0), pair.get(1));
         }
-        StringBuilder sb = new StringBuilder();
-        int n = s.length();
-        
-        for (int i = 0; i < n; i++) {
-            char c = s.charAt(i);
-            
-            if (c == '(') {
-                i++; 
-                TrieNode curr = root;
-                
-                while (s.charAt(i) != ')') {
-                    if (curr != null) {
-                        curr = curr.children[s.charAt(i) - 'a'];
-                    }
-                    i++;
-                }
-                
-                
-                if (curr != null && curr.value != null) {
-                    sb.append(curr.value);
-                } else {
-                    sb.append('?');
-                }
+      
+        // StringBuilder to efficiently build the result string
+        StringBuilder result = new StringBuilder();
+      
+        // Iterate through each character in the input string
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                // Found opening bracket, find the corresponding closing bracket
+                int closingBracketIndex = s.indexOf(')', i + 1);
+              
+                // Extract the key between brackets (excluding the brackets themselves)
+                String key = s.substring(i + 1, closingBracketIndex);
+              
+                // Replace the bracketed expression with its value from the map
+                // If key doesn't exist, use "?" as default
+                result.append(knowledgeMap.getOrDefault(key, "?"));
+              
+                // Move the index to the closing bracket position
+                // (loop will increment it by 1 in the next iteration)
+                i = closingBracketIndex;
             } else {
-                sb.append(c);
+                // Regular character, append it directly to the result
+                result.append(s.charAt(i));
             }
         }
-        
-        return sb.toString();
+      
+        // Convert StringBuilder to String and return
+        return result.toString();
     }
 }
