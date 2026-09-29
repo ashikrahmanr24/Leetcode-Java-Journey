@@ -1,61 +1,31 @@
 class Solution {
-    private int m, n;
-    private char[][] grid;
     private boolean[][][] visited;
 
     public boolean hasValidPath(char[][] grid) {
-        this.m = grid.length;
-        this.n = grid[0].length;
-        this.grid = grid;
-        
-        int maxLen = m + n - 1;
-        
-        // Pruning 1: The total length of the path must be even to form a valid pair of brackets
-        if (maxLen % 2 != 0) return false;
-        
-        // Pruning 2: The path must start with '(' and end with ')'
-        if (grid[0][0] == ')' || grid[m - 1][n - 1] == '(') return false;
-        
-        // Max possible open brackets at any point cannot exceed half the total path length
-        int maxBalance = maxLen / 2;
-        
-        // visited[r][c][balance]
-        this.visited = new boolean[m][n][maxBalance + 1];
+        int m = grid.length, n = grid[0].length;
+        if ((m + n - 1) % 2 != 0 || grid[0][0] == ')' || grid[m - 1][n - 1] == '(') {
+            return false;
+        }
 
-        return dfs(0, 0, 0);
+        int maxBal = (m + n) / 2;
+        visited = new boolean[m][n][maxBal + 1];
+
+        return dfs(grid, 0, 0, 0, m, n, maxBal);
     }
 
-    private boolean dfs(int r, int c, int balance) {
-        // Update balance: +1 for '(', -1 for ')'
-        balance += (grid[r][c] == '(') ? 1 : -1;
+    private boolean dfs(char[][] grid, int r, int c, int bal, int m, int n, int maxBal) {
+        bal += (grid[r][c] == '(' ? 1 : -1);
+        if (bal < 0 || bal > maxBal) return false;
 
-        // Pruning 3: Invalid balance (must not be negative, must not exceed max possible open brackets)
-        if (balance < 0 || balance > (m + n - 1) / 2) {
-            return false;
-        }
-
-        // Target reached
         if (r == m - 1 && c == n - 1) {
-            return balance == 0;
+            return bal == 0;
         }
 
-        // Pruning 4: If this exact state was already processed and failed, return false
-        if (visited[r][c][balance]) {
-            return false;
-        }
-        
-        // Mark state as visited
-        visited[r][c][balance] = true;
+        if (visited[r][c][bal]) return false;
+        visited[r][c][bal] = true;
 
-        // Try moving down
-        if (r + 1 < m && dfs(r + 1, c, balance)) {
-            return true;
-        }
-        
-        // Try moving right
-        if (c + 1 < n && dfs(r, c + 1, balance)) {
-            return true;
-        }
+        if (r + 1 < m && dfs(grid, r + 1, c, bal, m, n, maxBal)) return true;
+        if (c + 1 < n && dfs(grid, r, c + 1, bal, m, n, maxBal)) return true;
 
         return false;
     }
