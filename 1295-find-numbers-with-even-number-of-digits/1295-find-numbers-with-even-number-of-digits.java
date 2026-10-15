@@ -15,6 +15,7 @@ class Solution {
         return false;
     }
     static int digits(int n) {
+        if(n<0) n*=-1;
         int count=0;
         while(n>0) {
             count++;
