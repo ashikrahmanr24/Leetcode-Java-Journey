@@ -16,11 +16,11 @@ class Solution {
     }
     static int digits(int n) {
         if(n<0) n*=-1;
-        int count=0;
-        while(n>0) {
-            count++;
-            n /= 10;
-        }
-        return count;
+        // int count=0;
+        // while(n>0) {
+        //     count++;
+        //     n /= 10;
+        // }
+        return (int)(Math.log10(n)+1);
     }
 }
