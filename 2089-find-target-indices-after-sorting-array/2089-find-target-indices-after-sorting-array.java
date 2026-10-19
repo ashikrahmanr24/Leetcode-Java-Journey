@@ -1,19 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public List<Integer> targetIndices(int[] nums, int target) {
-        int count = 0;
-        int lessThan = 0;
-        
+        int lessThanTargetCount = 0;
+        int targetCount = 0;
         for (int num : nums) {
             if (num < target) {
-                lessThan++;
+                lessThanTargetCount++;
             } else if (num == target) {
-                count++;
+                targetCount++;
             }
         }
         
         List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            result.add(lessThan + i);
+        for (int i = 0; i < targetCount; i++) {
+            result.add(lessThanTargetCount + i);
         }
         
         return result;
