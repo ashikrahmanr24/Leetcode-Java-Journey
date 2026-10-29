@@ -2,150 +2,261 @@ import java.util.*;
 
 class Solution {
 
-    private static final int LOG = 17;
+    int[] head, to, next;
+    int edgeCount;
 
-    public List<Boolean> palindromePath(int n, int[][] edges, String s, String[] queries) {
+    int[] parent, depth, size, heavy;
+    int[] chainHead, pos;
+    int currentPos;
 
-        // ---------- Build tree ----------
-        List<Integer>[] graph = new ArrayList[n];
-        for (int i = 0; i < n; i++) graph[i] = new ArrayList<>();
+    int[] segTree;
+
+    public List<Boolean> palindromePath(int n, int[][] edges,
+                                        String s, String[] queries) {
+
+        // Build adjacency list
+        head = new int[n];
+        Arrays.fill(head, -1);
+
+        to = new int[2 * (n - 1)];
+        next = new int[2 * (n - 1)];
+
         for (int[] e : edges) {
-            graph[e[0]].add(e[1]);
-            graph[e[1]].add(e[0]);
+            addEdge(e[0], e[1]);
+            addEdge(e[1], e[0]);
         }
 
-        int[][] parent = new int[LOG][n];
-        for (int[] row : parent) Arrays.fill(row, -1);
+        parent = new int[n];
+        depth = new int[n];
+        size = new int[n];
+        heavy = new int[n];
 
-        int[] depth = new int[n];
-        int[] tin = new int[n];
-        int[] tout = new int[n];
-        int[] timer = {0};
+        Arrays.fill(parent, -1);
+        Arrays.fill(heavy, -1);
 
-        // ---------- DFS ----------
-        dfs(0, -1, graph, parent, depth, tin, tout, timer);
+        // Find subtree sizes and heavy child
+        dfs(0, -1);
 
-        // ---------- Binary lifting ----------
-        for (int k = 1; k < LOG; k++) {
-            for (int i = 0; i < n; i++) {
-                int p = parent[k - 1][i];
-                if (p != -1)
-                    parent[k][i] = parent[k - 1][p];
-            }
-        }
+        chainHead = new int[n];
+        pos = new int[n];
+        currentPos = 0;
 
-        // ---------- Fenwick tree ----------
-        Fenwick fenwick = new Fenwick(n);
+        // Heavy-Light Decomposition
+        decompose(0, 0);
 
-        char[] labels = s.toCharArray();
+        // Build array according to HLD positions
+        int[] values = new int[n];
+
         for (int i = 0; i < n; i++) {
-            int m = mask(labels[i]);
-            fenwick.add(tin[i], m);
-            fenwick.add(tout[i] + 1, m);
+            values[pos[i]] = 1 << (s.charAt(i) - 'a');
         }
 
-        List<Boolean> ans = new ArrayList<>();
+        // Segment tree
+        segTree = new int[4 * n];
+        build(1, 0, n - 1, values);
 
-        for (String q : queries) {
-            String[] p = q.split(" ");
+        char[] chars = s.toCharArray();
 
-            if (p[0].equals("update")) {
+        List<Boolean> answer = new ArrayList<>();
 
-                int u = Integer.parseInt(p[1]);
-                char c = p[2].charAt(0);
+        for (String query : queries) {
 
-                int delta = mask(labels[u]) ^ mask(c);
-                labels[u] = c;
+            String[] parts = query.split(" ");
 
-                fenwick.add(tin[u], delta);
-                fenwick.add(tout[u] + 1, delta);
+            if (parts[0].equals("update")) {
+
+                int node = Integer.parseInt(parts[1]);
+                char newChar = parts[2].charAt(0);
+
+                chars[node] = newChar;
+
+                int mask = 1 << (newChar - 'a');
+
+                update(
+                    1,
+                    0,
+                    n - 1,
+                    pos[node],
+                    mask
+                );
 
             } else {
 
-                int u = Integer.parseInt(p[1]);
-                int v = Integer.parseInt(p[2]);
-                int w = lca(u, v, parent, depth);
+                int u = Integer.parseInt(parts[1]);
+                int v = Integer.parseInt(parts[2]);
 
-                int m = fenwick.sum(tin[u])
-                        ^ fenwick.sum(tin[v])
-                        ^ mask(labels[w]);
+                int mask = queryPath(u, v);
 
-                ans.add(m == 0 || (m & (m - 1)) == 0);
+                // At most one character can have odd frequency
+                boolean possible =
+                    mask == 0 || (mask & (mask - 1)) == 0;
+
+                answer.add(possible);
             }
         }
 
-        return ans;
+        return answer;
     }
 
-    // ---------- DFS helper ----------
-    private void dfs(int u, int p,
-                     List<Integer>[] g,
-                     int[][] parent,
-                     int[] depth,
-                     int[] tin,
-                     int[] tout,
-                     int[] timer) {
+    // ---------- Graph ----------
 
-        tin[u] = timer[0]++;
-        parent[0][u] = p;
-
-        for (int v : g[u]) {
-            if (v == p) continue;
-            depth[v] = depth[u] + 1;
-            dfs(v, u, g, parent, depth, tin, tout, timer);
-        }
-
-        tout[u] = timer[0] - 1;
+    void addEdge(int u, int v) {
+        to[edgeCount] = v;
+        next[edgeCount] = head[u];
+        head[u] = edgeCount++;
     }
 
-    // ---------- LCA ----------
-    private int lca(int u, int v, int[][] parent, int[] depth) {
+    // ---------- First DFS ----------
 
-        if (depth[u] < depth[v]) {
-            int t = u; u = v; v = t;
-        }
+    void dfs(int node, int par) {
 
-        int d = depth[u] - depth[v];
-        for (int k = 0; k < LOG; k++)
-            if ((d & (1 << k)) != 0)
-                u = parent[k][u];
+        parent[node] = par;
+        size[node] = 1;
 
-        if (u == v) return u;
+        int maxSize = 0;
 
-        for (int k = LOG - 1; k >= 0; k--) {
-            if (parent[k][u] != parent[k][v]) {
-                u = parent[k][u];
-                v = parent[k][v];
+        for (int e = head[node]; e != -1; e = next[e]) {
+
+            int child = to[e];
+
+            if (child == par)
+                continue;
+
+            depth[child] = depth[node] + 1;
+
+            dfs(child, node);
+
+            size[node] += size[child];
+
+            if (size[child] > maxSize) {
+                maxSize = size[child];
+                heavy[node] = child;
             }
         }
-
-        return parent[0][u];
     }
 
-    private int mask(char c) {
-        return 1 << (c - 'a');
+    // ---------- Heavy-Light Decomposition ----------
+
+    void decompose(int node, int chain) {
+
+        chainHead[node] = chain;
+        pos[node] = currentPos++;
+
+        // Continue through heavy child
+        if (heavy[node] != -1) {
+            decompose(heavy[node], chain);
+        }
+
+        // Start new chains for light children
+        for (int e = head[node]; e != -1; e = next[e]) {
+
+            int child = to[e];
+
+            if (child == parent[node] || child == heavy[node])
+                continue;
+
+            decompose(child, child);
+        }
     }
 
-    // ---------- Fenwick Tree ----------
-    static class Fenwick {
-        int n;
-        int[] bit;
+    // ---------- Segment Tree ----------
 
-        Fenwick(int n) {
-            this.n = n;
-            bit = new int[n + 1];
+    void build(int node, int left, int right, int[] arr) {
+
+        if (left == right) {
+            segTree[node] = arr[left];
+            return;
         }
 
-        void add(int i, int val) {
-            for (i++; i <= n; i += i & -i)
-                bit[i] ^= val;
+        int mid = (left + right) / 2;
+
+        build(node * 2, left, mid, arr);
+        build(node * 2 + 1, mid + 1, right, arr);
+
+        segTree[node] =
+            segTree[node * 2] ^
+            segTree[node * 2 + 1];
+    }
+
+    void update(int node, int left, int right,
+                int index, int value) {
+
+        if (left == right) {
+            segTree[node] = value;
+            return;
         }
 
-        int sum(int i) {
-            int r = 0;
-            for (i++; i > 0; i -= i & -i)
-                r ^= bit[i];
-            return r;
+        int mid = (left + right) / 2;
+
+        if (index <= mid) {
+            update(node * 2, left, mid, index, value);
+        } else {
+            update(node * 2 + 1, mid + 1, right, index, value);
         }
+
+        segTree[node] =
+            segTree[node * 2] ^
+            segTree[node * 2 + 1];
+    }
+
+    int query(int node, int left, int right,
+              int ql, int qr) {
+
+        if (qr < left || right < ql)
+            return 0;
+
+        if (ql <= left && right <= qr)
+            return segTree[node];
+
+        int mid = (left + right) / 2;
+
+        return query(node * 2, left, mid, ql, qr)
+             ^ query(node * 2 + 1, mid + 1, right, ql, qr);
+    }
+
+    // ---------- Tree Path Query ----------
+
+    int queryPath(int u, int v) {
+
+        int result = 0;
+
+        while (chainHead[u] != chainHead[v]) {
+
+            // Always move the deeper chain upward
+            if (depth[chainHead[u]] <
+                depth[chainHead[v]]) {
+
+                int temp = u;
+                u = v;
+                v = temp;
+            }
+
+            result ^= query(
+                1,
+                0,
+                pos.length - 1,
+                pos[chainHead[u]],
+                pos[u]
+            );
+
+            u = parent[chainHead[u]];
+        }
+
+        // Same chain
+        if (depth[u] > depth[v]) {
+            int temp = u;
+            u = v;
+            v = temp;
+        }
+
+        result ^= query(
+            1,
+            0,
+            pos.length - 1,
+            pos[u],
+            pos[v]
+        );
+
+        return result;
     }
 }
